@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Aug 26 19:00:55 2020
+# Process ID: 2564
+# Current directory: C:/Users/edoardo antonaci/Desktop/FINAL_FIR_FILTER/FINAL_FIR_FILTER.runs/synth_1
+# Command line: vivado.exe -log FIR_RI.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FIR_RI.tcl
+# Log file: C:/Users/edoardo antonaci/Desktop/FINAL_FIR_FILTER/FINAL_FIR_FILTER.runs/synth_1/FIR_RI.vds
+# Journal file: C:/Users/edoardo antonaci/Desktop/FINAL_FIR_FILTER/FINAL_FIR_FILTER.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FIR_RI.tcl -notrace

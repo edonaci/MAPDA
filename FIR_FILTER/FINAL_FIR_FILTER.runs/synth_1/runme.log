@@ -1,0 +1,266 @@
+
+*** Running vivado
+    with args -log FIR_RI.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FIR_RI.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source FIR_RI.tcl -notrace
+Command: synth_design -top FIR_RI -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13164 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 430.449 ; gain = 98.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIR_RI' [C:/Users/edoardo antonaci/Desktop/FINAL_FIR_FILTER/FINAL_FIR_FILTER.srcs/sources_1/new/FIR_RI.vhd:22]
+	Parameter input_width bound to: 32 - type: integer 
+	Parameter output_width bound to: 32 - type: integer 
+	Parameter coef_width bound to: 32 - type: integer 
+	Parameter tap bound to: 5 - type: integer 
+	Parameter input_width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'N_bit_Reg' declared at 'C:/Users/edoardo antonaci/Desktop/FINAL_FIR_FILTER/FINAL_FIR_FILTER.srcs/sources_1/new/FIR_RI.vhd:83' bound to instance 'N_bit_Reg_unit' of component 'N_bit_Reg' [C:/Users/edoardo antonaci/Desktop/FINAL_FIR_FILTER/FINAL_FIR_FILTER.srcs/sources_1/new/FIR_RI.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'N_bit_Reg' [C:/Users/edoardo antonaci/Desktop/FINAL_FIR_FILTER/FINAL_FIR_FILTER.srcs/sources_1/new/FIR_RI.vhd:94]
+	Parameter input_width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'N_bit_Reg' (1#1) [C:/Users/edoardo antonaci/Desktop/FINAL_FIR_FILTER/FINAL_FIR_FILTER.srcs/sources_1/new/FIR_RI.vhd:94]
+	Parameter input_width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'N_bit_Reg' declared at 'C:/Users/edoardo antonaci/Desktop/FINAL_FIR_FILTER/FINAL_FIR_FILTER.srcs/sources_1/new/FIR_RI.vhd:83' bound to instance 'N_bit_Reg_unit' of component 'N_bit_Reg' [C:/Users/edoardo antonaci/Desktop/FINAL_FIR_FILTER/FINAL_FIR_FILTER.srcs/sources_1/new/FIR_RI.vhd:64]
+	Parameter input_width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'N_bit_Reg' declared at 'C:/Users/edoardo antonaci/Desktop/FINAL_FIR_FILTER/FINAL_FIR_FILTER.srcs/sources_1/new/FIR_RI.vhd:83' bound to instance 'N_bit_Reg_unit' of component 'N_bit_Reg' [C:/Users/edoardo antonaci/Desktop/FINAL_FIR_FILTER/FINAL_FIR_FILTER.srcs/sources_1/new/FIR_RI.vhd:64]
+	Parameter input_width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'N_bit_Reg' declared at 'C:/Users/edoardo antonaci/Desktop/FINAL_FIR_FILTER/FINAL_FIR_FILTER.srcs/sources_1/new/FIR_RI.vhd:83' bound to instance 'N_bit_Reg_unit' of component 'N_bit_Reg' [C:/Users/edoardo antonaci/Desktop/FINAL_FIR_FILTER/FINAL_FIR_FILTER.srcs/sources_1/new/FIR_RI.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'FIR_RI' (2#1) [C:/Users/edoardo antonaci/Desktop/FINAL_FIR_FILTER/FINAL_FIR_FILTER.srcs/sources_1/new/FIR_RI.vhd:22]
+WARNING: [Synth 8-3331] design FIR_RI has unconnected port rclk
+WARNING: [Synth 8-3331] design FIR_RI has unconnected port we
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 486.543 ; gain = 154.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 486.543 ; gain = 154.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 486.543 ; gain = 154.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 486.543 ; gain = 154.316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     64 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
++---Multipliers : 
+	                 9x32  Multipliers := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FIR_RI 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     64 Bit       Adders := 1     
++---Multipliers : 
+	                 9x32  Multipliers := 5     
+Module N_bit_Reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design FIR_RI has unconnected port rclk
+WARNING: [Synth 8-3331] design FIR_RI has unconnected port we
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 607.238 ; gain = 275.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 607.238 ; gain = 275.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 609.836 ; gain = 277.609
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 609.836 ; gain = 277.609
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 609.836 ; gain = 277.609
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 609.836 ; gain = 277.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 609.836 ; gain = 277.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 609.836 ; gain = 277.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 609.836 ; gain = 277.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   142|
+|3     |LUT1   |    19|
+|4     |LUT2   |   323|
+|5     |LUT3   |   185|
+|6     |LUT4   |   282|
+|7     |LUT5   |    82|
+|8     |LUT6   |    87|
+|9     |FDRE   |   128|
+|10    |IBUF   |    33|
+|11    |OBUF   |    32|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------------------+------------+------+
+|      |Instance                      |Module      |Cells |
++------+------------------------------+------------+------+
+|1     |top                           |            |  1314|
+|2     |  \GEN_FIR[0].N_bit_Reg_unit  |N_bit_Reg   |   247|
+|3     |  \GEN_FIR[1].N_bit_Reg_unit  |N_bit_Reg_0 |   257|
+|4     |  \GEN_FIR[2].N_bit_Reg_unit  |N_bit_Reg_1 |   247|
+|5     |  \GEN_FIR[3].N_bit_Reg_unit  |N_bit_Reg_2 |   186|
++------+------------------------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 609.836 ; gain = 277.609
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 609.836 ; gain = 277.609
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 609.836 ; gain = 277.609
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 142 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 717.012 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 717.012 ; gain = 397.801
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 717.012 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/edoardo antonaci/Desktop/FINAL_FIR_FILTER/FINAL_FIR_FILTER.runs/synth_1/FIR_RI.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FIR_RI_utilization_synth.rpt -pb FIR_RI_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 26 19:01:13 2020...
