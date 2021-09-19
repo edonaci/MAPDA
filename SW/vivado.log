@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Sep 19 12:24:06 2021
+# Process ID: 5364
+# Current directory: C:/Users/edoardo antonaci/Desktop/Esame Mapd A/Esame Mapd A/SW
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11536 C:\Users\edoardo antonaci\Desktop\Esame Mapd A\Esame Mapd A\SW\SW.xpr
+# Log file: C:/Users/edoardo antonaci/Desktop/Esame Mapd A/Esame Mapd A/SW/vivado.log
+# Journal file: C:/Users/edoardo antonaci/Desktop/Esame Mapd A/Esame Mapd A/SW\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/edoardo antonaci/Desktop/Esame Mapd A/Esame Mapd A/SW/SW.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/edoardo antonaci/Desktop/SW' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:12 . Memory (MB): peak = 911.996 ; gain = 66.461
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 19 12:25:09 2021...
